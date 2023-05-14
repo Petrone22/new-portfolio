@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #030014;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #555555;
+}
+::-webkit-scrollbar-thumb {
+  background: #adadad;
+  border-radius: 10px;
+  min-height: 40px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
