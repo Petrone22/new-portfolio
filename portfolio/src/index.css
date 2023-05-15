@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,4 +25,14 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+.search-card:hover {
+  box-shadow: rgba(88, 28, 135, 0.25) 0px 54px 55px,
+    rgba(88, 28, 135, 0.25) 0px -12px 30px, rgba(88, 28, 135, 0.25) 0px 4px 6px,
+    rgba(88, 28, 135, 0.17) 0px 12px 13px, rgba(88, 28, 135, 0.09) 0px -3px 5px;
+}
+.search-card {
+  box-shadow: rgba(88, 28, 135, 0.25) 0px 54px 55px,
+    rgba(88, 28, 135, 0) 0px -12px 30px, rgba(88, 28, 135, 0) 0px 4px 6px,
+    rgba(88, 28, 135, 0.1) 0px 12px 13px, rgba(88, 28, 135, 0.09) 0px -3px 5px;
 }

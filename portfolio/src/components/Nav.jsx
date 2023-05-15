@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
-const Nav = () => {
+const Nav = ({ home }) => {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <div className="w-full md:max-w-7xl h-16  p-4 rounded-b-md text-textClr flex justify-between fixed z-50 backdrop-blur-md">
-      <div className="h-full flex gap-4 w-min">
+      <div className="h-full flex gap-4 w-min  cursor-pointer ">
         <img
           src={logo}
           alt="Logo"
@@ -16,7 +16,16 @@ const Nav = () => {
         <span className="font-semibold text-lg w-fit">Mustafa</span>
       </div>
       <div className="hidden md:flex gap-2 border border-offwhite  rounded-3xl  px-4 h-full ">
-        <a href="#" className="hover:text-secondary transition-all">
+        <a
+          href="#"
+          className="hover:text-secondary transition-all"
+          onClick={() => {
+            home.scrollIntoView({
+              behaviour: "smooth",
+              block: "start",
+            });
+          }}
+        >
           Home
         </a>
         <a href="#" className="hover:text-secondary transition-all">
@@ -71,6 +80,12 @@ const Nav = () => {
         <a
           href="#"
           className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
+          onClick={() => {
+            home.scrollIntoView({
+              behaviour: "smooth",
+              block: "start",
+            });
+          }}
         >
           Home
         </a>
