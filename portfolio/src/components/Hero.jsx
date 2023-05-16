@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import Search from "./Search";
 const Hero = () => {
   return (
-    <div className=" mt-16 h-screen w-full  lg:max-w-7xl relative flex flex-col items-center gap-4 text-textClr ">
+    <motion.div
+      className=" mt-16 h-screen w-full   lg:max-w-7xl relative flex flex-col items-center gap-4 text-textClr md:mb-20"
+      initial={{ opacity: 0.1 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex flex-col gap-3 items-center z-10">
         <div className="mt-8 border p-2 w-fit rounded-3xl font-semibold text-sm text-secondary border-secondary  flex gap-2 pointer-events-none">
           <img src={svg} alt="stars" />
@@ -57,7 +62,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
