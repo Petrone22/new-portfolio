@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
-const Nav = ({ home, about, technology }) => {
+const Nav = ({ home, about, technology, work }) => {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <div className="w-full md:max-w-7xl h-16  p-4 rounded-b-md text-textClr flex justify-between fixed z-50 backdrop-blur-md">
@@ -43,7 +43,13 @@ const Nav = ({ home, about, technology }) => {
         >
           Technologies
         </a>
-        <a href="#" className="hover:text-secondary transition-all">
+        <a
+          href="#"
+          className="hover:text-secondary transition-all"
+          onClick={() => {
+            window.scrollTo(0, work.current.offsetTop);
+          }}
+        >
           Work
         </a>
       </div>
@@ -121,6 +127,7 @@ const Nav = ({ home, about, technology }) => {
           className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
           onClick={() => {
             setNavOpen((prevNav) => false);
+            window.scrollTo(0, work.current.offsetTop);
           }}
         >
           Work

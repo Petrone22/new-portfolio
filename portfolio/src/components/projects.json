@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Space Tourism",
+    "description": "A website that takes you on a journey in our solar system.",
+    "linkgh": "https://github.com/Petrone22/Space-exploration-guide",
+    "linkwebsite": "https://petrone22.github.io/Space-exploration-guide/"
+  },
+  {
+    "title": "Musika",
+    "description": "A personal music exploration application.",
+    "linkgh": "https://github.com/Petrone22/music-explorer",
+    "linkwebsite": "https://petrone22.github.io/music-explorer/"
+  },
+  {
+    "title": "Old Portfolio Project",
+    "description": "My deprecated portfolio project. Made with THREE.JS",
+    "linkgh": "https://github.com/Petrone22/portfolio",
+    "linkwebsite": "https://petrone22.github.io/portfolioproject/"
+  },
+  {
+    "title": "Multi Step Form",
+    "description": "A multi Step form made with ReactJS.",
+    "linkgh": "https://github.com/Petrone22/multi-step-form",
+    "linkwebsite": "https://petrone22.github.io/multi-step-form/"
+  },
+  {
+    "title": "Enigma Machine",
+    "description": "An enigma machine simulator to encode secret messages.",
+    "linkgh": "https://github.com/Petrone22/the-enigma-machine",
+    "linkwebsite": "https://petrone22.github.io/the-enigma-machine/"
+  }
+]

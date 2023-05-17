@@ -18,7 +18,7 @@ const About = () => {
       <img
         src={bg}
         alt="backgroud"
-        className=" bg-img absolute -z-10  -mt-40 opacity-60 md:w-3/4"
+        className="block md:hidden bg-img absolute -z-10 md:w-fit bottom-1/2  "
       />
       <h1 className="animated font-bold text-4xl md:text-4xl text-center mt-9 ">
         About Me:

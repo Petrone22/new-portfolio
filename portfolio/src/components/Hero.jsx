@@ -3,11 +3,13 @@ import video1 from "../assets/video1.webm";
 import svg from "../assets/stars.svg";
 import { motion } from "framer-motion";
 import Search from "./Search";
+import bg from "../assets/bgimg.png";
+
 const Hero = () => {
   return (
     <motion.div
       className=" mt-16 h-screen w-full   lg:max-w-7xl relative flex flex-col items-center gap-4 text-textClr md:mb-20"
-      initial={{ opacity: 0.1 }}
+      initial={{ opacity: 0.5 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
@@ -24,6 +26,11 @@ const Hero = () => {
         </h3>
       </div>
       <div className="absolute  top-4 w-full h-fit ">
+        <img
+          src={bg}
+          alt="backgroud"
+          className=" hidden md:block bg-img absolute -z-10 md:w-fit top-full  "
+        />
         <video
           src={video1}
           autoPlay

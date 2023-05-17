@@ -39,10 +39,13 @@ html {
 }
 
 .bg-img {
-  min-width: 800px;
   overflow: hidden;
+  min-width: 620px;
 }
 .bg-video {
   height: 100%;
   object-fit: cover;
+}
+svg {
+  fill: #8e3eda;
 }

@@ -5,7 +5,7 @@ const BallComponent = ({ icon, name }) => {
 
   return (
     <div
-      className="w-16 h-16 md:w-20 md:h-20 relative "
+      className="w-14 h-14  md:w-20 md:h-20 relative "
       onMouseEnter={() => {
         setHovered((prevHovered) => true);
       }}

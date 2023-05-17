@@ -17,14 +17,14 @@ import figma from "../assets/figma.png";
 const Technology = () => {
   return (
     <motion.div
-      className=" mt-16 md:mt-0 h-screen w-full   lg:max-w-7xl relative flex flex-row gap-8  items-center justify-center  text-textClr md:mb-20"
+      className=" mt-16 md:mt-0 h-screen w-full   lg:max-w-7xl relative flex flex-row gap-8 items-center justify-center  text-textClr md:mb-20"
       initial={{ opacity: 0.1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="absolute top-0 font-bold text-4xl md:text-4xl text-center mt-9 flex flex-col items-center justify-center gap-2">
+      <h1 className="absolute top-0 font-bold text-2xl md:text-4xl text-center mt-9 flex flex-col items-center justify-center gap-2">
         Skillset
-        <p className="font-light text-2xl">
+        <p className="font-light text-xl">
           Useful <span className="text-accent">Technologies</span> that I use,
           along with many other developers:
         </p>
@@ -49,7 +49,7 @@ const Technology = () => {
         playsInline
         muted
         loop
-        className="bg-video opacity-70 absolute -z-10 "
+        className="bg-video opacity-90 absolute -z-10 "
       ></video>
     </motion.div>
   );

@@ -4,23 +4,32 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import { useRef } from "react";
 import Technology from "./components/Technology";
-import video from "./assets/video2.webm";
+import Projects from "./components/Projects";
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const technologyRef = useRef(null);
+  const workRef = useRef(null);
   return (
     <div className="text-textClr flex flex-col items-center relative overflow-hidden">
-      <Nav about={aboutRef} home={homeRef} technology={technologyRef} />
+      <Nav
+        about={aboutRef}
+        home={homeRef}
+        technology={technologyRef}
+        work={workRef}
+      />
       <div className="" ref={homeRef}></div>
       <Hero />
 
       <div className="" ref={aboutRef}></div>
 
       <About />
-      <div className="" ref={technologyRef}></div>
+      <div className="mt-16 md:-mt-20 mb-6" ref={technologyRef}></div>
 
       <Technology />
+
+      <div className="-mt-20 md:-mt-48 -mb-40 " ref={workRef}></div>
+      <Projects />
     </div>
   );
 }
