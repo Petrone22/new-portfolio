@@ -11,7 +11,7 @@ function App() {
   const technologyRef = useRef(null);
   const workRef = useRef(null);
   return (
-    <div className="text-textClr flex flex-col items-center relative overflow-hidden">
+    <div className="text-textClr flex flex-col items-center relative overflow-hidden h-fit">
       <Nav
         about={aboutRef}
         home={homeRef}

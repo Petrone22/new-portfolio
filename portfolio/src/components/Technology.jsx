@@ -17,19 +17,11 @@ import figma from "../assets/figma.png";
 const Technology = () => {
   return (
     <motion.div
-      className=" mt-16 md:mt-0 h-screen w-full   lg:max-w-7xl relative flex flex-row gap-8 items-center justify-center  text-textClr md:mb-20"
+      className=" mt-16 md:-mt-96  h-screen w-full lg:max-w-7xl relative flex flex-row gap-8 items-center justify-center  text-textClr md:mb-96"
       initial={{ opacity: 0.1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="absolute top-0 font-bold text-2xl md:text-4xl text-center mt-9 flex flex-col items-center justify-center gap-2">
-        Skillset
-        <p className="font-light text-xl">
-          Useful <span className="text-accent">Technologies</span> that I use,
-          along with many other developers:
-        </p>
-      </h1>
-
       <div className="w-full px-2 md:px-0 md:w-7/12 h-1/2 flex items-center justify-center gap-10 flex-wrap">
         <BallComponent icon={html} name={"HTML5"} />
         <BallComponent icon={css} name={"CSS3"} />

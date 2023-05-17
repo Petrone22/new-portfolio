@@ -22,7 +22,8 @@ const Hero = () => {
           Mustafa Rashid
         </h1>
         <h3 className="animated font-bold text-xl md:text-2xl text-center">
-          Unlock your business <span className="text-secondary">Potential</span>
+          Unleash your business{" "}
+          <span className="text-secondary">Potential</span>
         </h3>
       </div>
       <div className="absolute  top-4 w-full h-fit ">

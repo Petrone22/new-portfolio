@@ -11,9 +11,16 @@ const Projects = () => {
   console.log(data);
   return (
     <motion.div
-      className=" mt-16 md:mt-56 md:mb-60% h-screen w-full lg:max-w-7xl flex flex-col md:flex-row gap-8 flex-wrap items-center justify-center text-textClr md:mb-20"
+      className=" mt-52  h-fit w-full  relative lg:max-w-7xl flex flex-col md:flex-row gap-8 flex-wrap items-center justify-center text-textClr "
       transition={{ duration: 0.5 }}
     >
+      <h1 className="absolute -top-40  font-bold text-2xl md:text-4xl text-center mt-9 flex flex-col items-center justify-center gap-2">
+        Projects
+        <p className="font-light text-xl">
+          <span className="text-accent">Projects</span> that I previously worked
+          on:
+        </p>
+      </h1>
       <Card
         img={space}
         title={data[0].title}

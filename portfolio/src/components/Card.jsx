@@ -2,13 +2,17 @@ import React from "react";
 const Card = ({ title, img, description, gh, pages }) => {
   return (
     <div
-      className="w-11/12 md:w-5/12  h-auto rounded-xl p-1 mb-8 text-textClr border border-purple-950 cursor-pointer "
+      className="w-11/12 md:w-5/12  h-auto rounded-xl p-1 mb-8 text-textClr border border-purple-950 cursor-pointer hover:border-purple-700 transition-all duration-300"
       //   style={{
       //     border: "1px solid rgba(255,235,235,0.4)",
       //   }}
     >
       <div className="w-full flex flex-col gap-2 relative">
-        <a href="#" target="_blank" className="absolute w-full h-full z-10"></a>
+        <a
+          href={pages}
+          target="_blank"
+          className="absolute w-full h-full z-10"
+        ></a>
         <img
           src={img}
           alt="background"
