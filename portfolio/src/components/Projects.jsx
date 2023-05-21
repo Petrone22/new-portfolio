@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Card from "./Card";
 import data from "./projects.json";
@@ -7,16 +7,16 @@ import form from "../assets/form.png";
 import oldportfolio from "../assets/portfolio.png";
 import musika from "../assets/musika.png";
 import space from "../assets/space.png";
-const Projects = () => {
-  console.log(data);
+const Projects = ({ worksection }) => {
   return (
     <motion.div
-      className=" mt-52  h-fit w-full  relative lg:max-w-7xl flex flex-col md:flex-row gap-8 flex-wrap items-center justify-center text-textClr "
+      ref={worksection}
+      className=" mt-52 md:mt-96  h-fit w-full  relative lg:max-w-7xl flex flex-col md:flex-row gap-8 flex-wrap items-center justify-center text-textClr "
       transition={{ duration: 0.5 }}
     >
       <h1 className="absolute -top-40  font-bold text-2xl md:text-4xl text-center mt-9 flex flex-col items-center justify-center gap-2">
         Projects
-        <p className="font-light text-xl">
+        <p className="font-light text-2xl">
           <span className="text-accent">Projects</span> that I previously worked
           on:
         </p>

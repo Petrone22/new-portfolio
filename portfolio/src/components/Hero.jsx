@@ -4,14 +4,16 @@ import svg from "../assets/stars.svg";
 import { motion } from "framer-motion";
 import Search from "./Search";
 import bg from "../assets/bgimg.png";
+import { useRef } from "react";
 
-const Hero = () => {
+const Hero = ({ homesection }) => {
   return (
     <motion.div
       className=" mt-16 h-screen w-full   lg:max-w-7xl relative flex flex-col items-center gap-4 text-textClr md:mb-20"
       initial={{ opacity: 0.5 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      ref={homesection}
     >
       <div className="flex flex-col gap-3 items-center z-10">
         <div className="mt-8 border p-2 w-fit rounded-3xl font-semibold text-sm text-secondary border-secondary  flex gap-2 pointer-events-none">

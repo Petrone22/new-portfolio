@@ -1,9 +1,61 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.jpg";
-const Nav = ({ home, about, technology, work }) => {
-  const [navOpen, setNavOpen] = useState(false);
+import { Link, useLocation } from "react-router-dom";
+
+const Btns = ({ hoverstate }) => {
   return (
-    <div className="w-full md:max-w-7xl h-16  p-4 rounded-b-md text-textClr flex justify-between fixed z-50 backdrop-blur-md">
+    <div className="w-full h-full flex gap-1">
+      <div className="w-full rounded-2xl hover:bg-purple-700">
+        <Link to="/contact" className="w-full h-full ">
+          Contact
+        </Link>
+      </div>
+      <div
+        className="w-full rounded-2xl hover:bg-purple-700"
+        style={{
+          display: hoverstate ? "block" : "none",
+        }}
+      >
+        <Link to="/resume" className="w-full h-full ">
+          Resume
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+const HomeBtn = () => {
+  return (
+    <div className="w-full h-full flex gap-1 hover:bg-purple-700 rounded-2xl">
+      <Link to="/" className="w-full h-full">
+        Home
+      </Link>
+    </div>
+  );
+};
+
+const ReturnName = (pathname) => {
+  if (pathname === "/") {
+    return "Contact";
+  } else {
+    return "Home";
+  }
+};
+
+const pickBtn = (pathanme, hoverState) => {
+  if (pathanme === "/") {
+    return <Btns hoverstate={hoverState} />;
+  } else {
+    return <HomeBtn />;
+  }
+};
+
+const Nav = ({ home, about, technology, work }) => {
+  const location = useLocation();
+  const [navOpen, setNavOpen] = useState(false);
+  const [btnHovered, setBtnHovered] = useState(false);
+  return (
+    <div className="w-full md:max-w-7xl h-16  p-4 rounded-b-md text-textClr flex justify-between fixed z-50 backdrop-blur-md ">
       <div className="h-full flex gap-4 w-min  cursor-pointer ">
         <img
           src={logo}
@@ -15,48 +67,70 @@ const Nav = ({ home, about, technology, work }) => {
         />
         <span className="font-semibold text-lg w-fit">Mustafa</span>
       </div>
-      <div className="hidden md:flex gap-2 border border-offwhite  rounded-3xl  px-4 h-full ">
-        <a
-          href="#"
-          className="hover:text-secondary transition-all"
-          onClick={() => {
-            window.scrollTo(0, home.current.offsetTop);
-          }}
-        >
-          Home
-        </a>
-        <a
-          href="#"
-          className="hover:text-secondary transition-all"
-          onClick={() => {
-            window.scrollTo(0, about.current.offsetTop);
-          }}
-        >
-          About
-        </a>
-        <a
-          href="#"
-          className="hover:text-secondary transition-all"
-          onClick={() => {
-            window.scrollTo(0, technology.current.offsetTop);
-          }}
-        >
-          Technologies
-        </a>
-        <a
-          href="#"
-          className="hover:text-secondary transition-all"
-          onClick={() => {
-            window.scrollTo(0, work.current.offsetTop);
-          }}
-        >
-          Work
-        </a>
-      </div>
+      {location.pathname === "/" ? (
+        <div className="hidden md:flex gap-2 border border-offwhite  rounded-3xl  px-4 h-full ">
+          <a
+            href="#"
+            className="hover:text-secondary transition-all"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo(0, 0);
+            }}
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="hover:text-secondary transition-all"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo(0, 1000);
+            }}
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="hover:text-secondary transition-all"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo(0, 1700);
+            }}
+          >
+            Technologies
+          </a>
+          <a
+            href="#"
+            className="hover:text-secondary transition-all"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo(0, 2900);
+            }}
+          >
+            Work
+          </a>
+        </div>
+      ) : (
+        ""
+      )}
+
       <div className="h-full flex gap-2 ">
-        <button className="border border-offwhite px-4 rounded-2xl bg-purple-950 hover:bg-accent transition-all ">
-          Contact
-        </button>
+        <div
+          className=" border border-offwhite w-20 text-center rounded-2xl bg-purple-950 cursor-pointer  transition-all duration-300"
+          style={{
+            width: btnHovered ? "11rem" : "5rem",
+          }}
+          onClick={(e) => {
+            console.log(e.target);
+            e.stopPropagation();
+            setBtnHovered((prevHover) => !prevHover);
+          }}
+        >
+          {btnHovered
+            ? pickBtn(location.pathname, btnHovered)
+            : ReturnName(location.pathname)}
+        </div>
+
         <div
           className="w-10 flex flex-col gap-1 md:hidden"
           onClick={() => {
@@ -95,9 +169,10 @@ const Nav = ({ home, about, technology, work }) => {
         <a
           href="#"
           className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setNavOpen((prevNav) => false);
-            window.scrollTo(0, home.current.offsetTop);
+            window.scrollTo(0, 0);
           }}
         >
           Home
@@ -105,9 +180,11 @@ const Nav = ({ home, about, technology, work }) => {
         <a
           href="#"
           className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
             setNavOpen((prevNav) => false);
-            window.scrollTo(0, about.current.offsetTop);
+            window.scrollTo(0, 600);
           }}
         >
           About
@@ -115,9 +192,10 @@ const Nav = ({ home, about, technology, work }) => {
         <a
           href="#"
           className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setNavOpen((prevNav) => false);
-            window.scrollTo(0, technology.current.offsetTop);
+            window.scrollTo(0, 1400);
           }}
         >
           Technologies
@@ -125,9 +203,10 @@ const Nav = ({ home, about, technology, work }) => {
         <a
           href="#"
           className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setNavOpen((prevNav) => false);
-            window.scrollTo(0, work.current.offsetTop);
+            window.scrollTo(0, 2150);
           }}
         >
           Work

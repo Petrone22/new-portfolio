@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import phone from "../assets/cell.svg";
 import location from "../assets/location.svg";
@@ -7,13 +7,14 @@ import gmail from "../assets/gmail.svg";
 import person from "../assets/person.svg";
 import reactIcon from "../assets/react.svg";
 import bg from "../assets/bgimg.png";
-const About = () => {
+const About = ({ aboutsection }) => {
   return (
     <motion.div
       initial={{ opacity: 0.1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className=" h-screen w-full lg:max-w-7xl flex flex-col  items-center gap-12 text-textClr -mt-20 relative md:mt-60 "
+      className=" h-screen w-full lg:max-w-7xl flex flex-col  items-center gap-12 text-textClr -mt-20 relative md:mt-60 mb-40 md:mb-0"
+      ref={aboutsection}
     >
       <img
         src={bg}
