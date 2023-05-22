@@ -121,7 +121,6 @@ const Nav = ({ home, about, technology, work }) => {
             width: btnHovered ? "11rem" : "5rem",
           }}
           onClick={(e) => {
-            console.log(e.target);
             e.stopPropagation();
             setBtnHovered((prevHover) => !prevHover);
           }}
@@ -158,60 +157,64 @@ const Nav = ({ home, about, technology, work }) => {
           ></span>
         </div>
       </div>
-      <div
-        className="absolute top-16 flex flex-col gap-6  h-screen bg-bgclr p-4 left-0  w-full  md:hidden transition-all duration-300 "
-        style={{
-          pointerEvents: navOpen ? "auto" : "none",
-          top: navOpen ? "4rem" : "-5%",
-          opacity: navOpen ? "1" : "0",
-        }}
-      >
-        <a
-          href="#"
-          className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavOpen((prevNav) => false);
-            window.scrollTo(0, 0);
+      {location.pathname === "/" ? (
+        <div
+          className="absolute top-16 flex flex-col gap-6  h-screen bg-bgclr p-4 left-0  w-full  md:hidden transition-all duration-300 "
+          style={{
+            pointerEvents: navOpen ? "auto" : "none",
+            top: navOpen ? "4rem" : "-5%",
+            opacity: navOpen ? "1" : "0",
           }}
         >
-          Home
-        </a>
-        <a
-          href="#"
-          className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={(e) => {
-            e.preventDefault();
+          <a
+            href="#"
+            className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
+            onClick={(e) => {
+              e.preventDefault();
+              setNavOpen((prevNav) => false);
+              window.scrollTo(0, 0);
+            }}
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
+            onClick={(e) => {
+              e.preventDefault();
 
-            setNavOpen((prevNav) => false);
-            window.scrollTo(0, 600);
-          }}
-        >
-          About
-        </a>
-        <a
-          href="#"
-          className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavOpen((prevNav) => false);
-            window.scrollTo(0, 1400);
-          }}
-        >
-          Technologies
-        </a>
-        <a
-          href="#"
-          className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavOpen((prevNav) => false);
-            window.scrollTo(0, 2150);
-          }}
-        >
-          Work
-        </a>
-      </div>
+              setNavOpen((prevNav) => false);
+              window.scrollTo(0, 600);
+            }}
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
+            onClick={(e) => {
+              e.preventDefault();
+              setNavOpen((prevNav) => false);
+              window.scrollTo(0, 1400);
+            }}
+          >
+            Technologies
+          </a>
+          <a
+            href="#"
+            className="hover:text-secondary transition-all border-b-2 border-offwhite mb-4 pb-4 w-full"
+            onClick={(e) => {
+              e.preventDefault();
+              setNavOpen((prevNav) => false);
+              window.scrollTo(0, 2150);
+            }}
+          >
+            Work
+          </a>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
