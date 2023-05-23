@@ -15,7 +15,7 @@ const ContactPage = () => {
       </div>
       <div className="w-full md:w-3/5  h-fit flex flex-col gap-12 items-center">
         <form
-          className="flex flex-col gap-4 w-11/12 font-semibold"
+          className="flex flex-col gap-4 w-10/12 md:w-11/12 font-semibold"
           id="contactform"
           action="https://formsubmit.io/send/mustafarashid.cs@gmail.com"
           method="POST"
@@ -48,7 +48,7 @@ const ContactPage = () => {
             className="bg-purple-950 hover:bg-purple-700 transition-all rounded-xl py-4 text-xl mdtext-2xl text-textClr"
           />
         </form>
-        <div className="w-11/12 h-fit flex gap-2 justify-between">
+        <div className="w-11/12 h-fit flex flex-wrap gap-2 justify-between">
           <LinkComponent img={discord} text={"Petrone#5119"} />
           <LinkComponent img={instagram} text={"Petrone0001"} />
           <LinkComponent

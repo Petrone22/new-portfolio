@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Card from "./Card";
 import data from "./projects.json";
@@ -11,7 +11,7 @@ const Projects = ({ worksection }) => {
   return (
     <motion.div
       ref={worksection}
-      className=" mt-52 md:mt-96  h-fit w-full  relative lg:max-w-7xl flex flex-col md:flex-row gap-8 flex-wrap items-center justify-center text-textClr "
+      className=" mt-10 md:mt-0  h-fit w-full  relative lg:max-w-7xl flex flex-col md:flex-row gap-8 flex-wrap items-center justify-center text-textClr "
       transition={{ duration: 0.5 }}
     >
       <h1 className="absolute -top-40  font-bold text-2xl md:text-4xl text-center mt-9 flex flex-col items-center justify-center gap-2">

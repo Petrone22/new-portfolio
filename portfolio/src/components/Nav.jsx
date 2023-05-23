@@ -4,14 +4,14 @@ import { Link, useLocation } from "react-router-dom";
 
 const Btns = ({ hoverstate }) => {
   return (
-    <div className="w-full h-full flex gap-1">
-      <div className="w-full rounded-2xl hover:bg-purple-700">
-        <Link to="/contact" className="w-full h-full ">
+    <div className="w-full h-full flex gap-1 items-center justify-center">
+      <div className="w-full rounded-2xl hover:bg-purple-700 flex items-center justify-center">
+        <Link to="/contact" className="w-full h-full text-center">
           Contact
         </Link>
       </div>
       <div
-        className="w-full rounded-2xl hover:bg-purple-700"
+        className="w-full rounded-2xl hover:bg-purple-700 flex items-center justify-center"
         style={{
           display: hoverstate ? "block" : "none",
         }}
@@ -26,8 +26,8 @@ const Btns = ({ hoverstate }) => {
 
 const HomeBtn = () => {
   return (
-    <div className="w-full h-full flex gap-1 hover:bg-purple-700 rounded-2xl">
-      <Link to="/" className="w-full h-full">
+    <div className="w-full h-full flex gap-1 hover:bg-purple-700 rounded-2xl items-center justify-center">
+      <Link to="/" className="w-full h-full text-center">
         Home
       </Link>
     </div>
@@ -104,7 +104,7 @@ const Nav = ({ home, about, technology, work }) => {
             className="hover:text-secondary transition-all"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo(0, 2900);
+              window.scrollTo(0, 2500);
             }}
           >
             Work
@@ -116,7 +116,7 @@ const Nav = ({ home, about, technology, work }) => {
 
       <div className="h-full flex gap-2 ">
         <div
-          className=" border border-offwhite w-20 text-center rounded-2xl bg-purple-950 cursor-pointer  transition-all duration-300"
+          className=" border border-offwhite w-20 text-center rounded-2xl bg-purple-950 cursor-pointer  transition-all duration-300 flex justify-center items-center"
           style={{
             width: btnHovered ? "11rem" : "5rem",
           }}
@@ -206,7 +206,7 @@ const Nav = ({ home, about, technology, work }) => {
             onClick={(e) => {
               e.preventDefault();
               setNavOpen((prevNav) => false);
-              window.scrollTo(0, 2150);
+              window.scrollTo(0, 2050);
             }}
           >
             Work

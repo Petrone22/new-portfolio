@@ -58,17 +58,72 @@ const Hero = ({ homesection }) => {
               border: "1px solid rgba(255,235,235,0.4)",
             }}
           >
-            <Search quote={"What is HTML?"} />
-            <Search quote={"How to Center a Div css"} />
-            <Search quote={"JS Error #1"} />
-            <Search quote={"How to select elements JS"} />
-            <Search quote={"JS Error #1934"} />
-            <Search quote={"Intermediate JS Projects"} />
-            <Search quote={"Learn React"} />
-            <Search quote={"How to use useState()"} />
-            <Search quote={"Three.JS"} />
-            <Search quote={"Design Course"} />
-            <Search quote={"how much coffee before dehydration?"} />
+            <Search
+              search={
+                "https://www.google.com/search?q=what+is+html&rlz=1C1GCEA_enEG1017EG1017&oq=what+is+html&aqs=chrome..69i57.1925j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"What is HTML?"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=how+to+center+a+div+css&rlz=1C1GCEA_enEG1017EG1017&oq=how+to+center+a+div+css&aqs=chrome..69i57.3151j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"How to Center a Div css"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=console+log+null+js&rlz=1C1GCEA_enEG1017EG1017&sxsrf=APwXEdeHLwmPxIyB4TV32LYxVTUqmohKrQ%3A1684835368263&ei=KIxsZOTJD6yDi-gPnd2RqA0&ved=0ahUKEwjk_YTtlIv_AhWswQIHHZ1uBNUQ4dUDCA8&uact=5&oq=console+log+null+js&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMgYIABAWEB46CggAEEcQ1gQQsAM6BwgjEOoCECc6EAgAEOMEEOkEEOoCELQCGAE6DAgjEIoFECcQRhD5AToHCCMQigUQJzoECCMQJzoICAAQigUQkQI6DQgAEIoFELEDEIMBEEM6BwgAEIoFEEM6DQguEIoFEMcBENEDEEM6CggAEIoFELEDEEM6IAgAEIoFEEYQ-QEQlwUQjAUQ3QQQRhD0AxD1AxD2AxgCOgoIABCABBAUEIcCOgsIABCABBCxAxCDAToOCC4QgAQQsQMQxwEQ0QM6BQgAEIAEOggIABCABBCxAzoLCAAQigUQsQMQgwE6CwguEIAEEMcBEK8BSgQIQRgAUI8JWKogYJAhaARwAXgAgAGrAYgBrRSSAQQwLjE4mAEAoAEBsAEQyAEIwAEB2gEGCAEQARgB2gEGCAIQARgT&sclient=gws-wiz-serp"
+              }
+              quote={"JS Error #1"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=how+to+select+element+js&rlz=1C1GCEA_enEG1017EG1017&oq=how+to+select+element+js&aqs=chrome..69i57.3261j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"How to select elements JS"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=unable+to+load+module+js&rlz=1C1GCEA_enEG1017EG1017&oq=unable+to+load+module+js&aqs=chrome..69i57.4961j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"JS Error #1934"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=Intermediate+JS+Projects&rlz=1C1GCEA_enEG1017EG1017&oq=Intermediate+JS+Projects&aqs=chrome..69i57.1023j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"Intermediate JS Projects"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=Learn+React&rlz=1C1GCEA_enEG1017EG1017&oq=Learn+React&aqs=chrome..69i57j69i65j69i61.277j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"Learn React"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=How+to+use+useState()&rlz=1C1GCEA_enEG1017EG1017&oq=How+to+use+useState()&aqs=chrome..69i57.177j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"How to use useState()"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=Three.JS&rlz=1C1GCEA_enEG1017EG1017&oq=Three.JS&aqs=chrome..69i57j69i59j69i65l2j69i60j69i65.1182j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"Three.JS"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=Design+Course&rlz=1C1GCEA_enEG1017EG1017&oq=Design+Course&aqs=chrome..69i57.307j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"Design Course"}
+            />
+            <Search
+              search={
+                "https://www.google.com/search?q=how+much+coffee+before+dehydration%3F&rlz=1C1GCEA_enEG1017EG1017&oq=how+much+coffee+before+dehydration%3F&aqs=chrome..69i57.267j0j7&sourceid=chrome&ie=UTF-8"
+              }
+              quote={"how much coffee before dehydration?"}
+            />
           </div>
         </motion.div>
       </div>

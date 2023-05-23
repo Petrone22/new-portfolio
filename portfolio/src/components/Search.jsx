@@ -1,7 +1,8 @@
 import React from "react";
-const Search = ({ quote }) => {
+const Search = ({ quote, search }) => {
   return (
-    <div className="search-card border border-purple-800 w-fit  p-1 md:min-h-fit md:h-12 md:max-h-fit shrink-0 text-textClr rounded-md flex gap-1 justify-between items=center text-sm md:mr-16 md:w-72 md:mb-8 transition-all duration-300">
+    <div className="relative search-card border border-purple-800 w-fit  p-1 md:min-h-fit md:h-12 md:max-h-fit shrink-0 text-textClr rounded-md flex gap-1 justify-between items=center text-sm md:mr-16 md:w-72 md:mb-8 transition-all duration-300">
+      <a href={search} className="absolute h-full w-full" target="_blank"></a>
       <div
         className="h-full w-fit   pr-1 flex items-center justify-center"
         style={{

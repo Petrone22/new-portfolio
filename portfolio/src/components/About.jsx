@@ -33,8 +33,11 @@ const About = ({ aboutsection }) => {
         never-ending will to learn and grow within the tech industry.
       </p>
       <span className="flex gap-2 items-center">
-        <img src={reactIcon} alt="react" className="inline" />
-        <h2 className="text-xl font-bold "> Front End & ReactJS Developer:</h2>
+        <img src={reactIcon} alt="react" className="" />
+        <h2 className="text-xl font-bold text-center">
+          {" "}
+          Front End & ReactJS Developer:
+        </h2>
       </span>
       <div className="w-full flex items-center justify-center flex-wrap gap-4">
         <span className="mt-2 md:mr-4">

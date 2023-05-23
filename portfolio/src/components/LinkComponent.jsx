@@ -6,7 +6,7 @@ const LinkComponent = ({ img, text }) => {
 
   return (
     <div
-      className="w-28 h-28 relative"
+      className="w-16 md:w-24 relative"
       onClick={() => {
         navigator.clipboard.writeText(text);
         setClicked((prevClick) => true);
