@@ -13,7 +13,7 @@ const About = ({ aboutsection }) => {
       initial={{ opacity: 0.1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className=" h-screen w-full lg:max-w-7xl flex flex-col  items-center gap-12 text-textClr -mt-20 relative md:mt-60 mb-40 md:mb-0"
+      className=" h-screen w-full sm:mt-0 lg:max-w-7xl flex flex-col  items-center gap-12 text-textClr -mt-20 relative md:mt-96 mb-40 md:mb-0"
       ref={aboutsection}
     >
       <img
@@ -54,7 +54,7 @@ const About = ({ aboutsection }) => {
         </span>
         <span className="mt-2 md:mr-4">
           <img src={gmail} alt="phone" className="inline mr-2" />
-          E-Mail: mustafa.rashid1546@Gmail.com
+          E-Mail: mustafarashid.cs@Gmail.com
         </span>
         <span className="mt-2 md:mr-4">
           <img src={person} alt="phone" className="inline mr-2" />

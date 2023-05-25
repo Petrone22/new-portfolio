@@ -4,8 +4,7 @@ import svg from "../assets/stars.svg";
 import { motion } from "framer-motion";
 import Search from "./Search";
 import bg from "../assets/bgimg.png";
-import { useRef } from "react";
-
+import way from "../assets/pointer.png";
 const Hero = ({ homesection }) => {
   return (
     <motion.div
@@ -28,7 +27,7 @@ const Hero = ({ homesection }) => {
           <span className="text-secondary">Potential</span>
         </h3>
       </div>
-      <div className="absolute  top-4 w-full h-fit ">
+      <div className="absolute top-4 w-full h-fit ">
         <img
           src={bg}
           alt="backgroud"
@@ -47,17 +46,57 @@ const Hero = ({ homesection }) => {
             opacity: 0,
           }}
           whileInView={{ opacity: 1 }}
-          className="h-1/2 absolute top-60% md:top-54%  backdrop-blur-lg w-full rounded-xl  border-opacity-0 p-2"
+          className="h-2/3 md:h-fit absolute top-60% md:top-54%  backdrop-blur-lg w-full rounded-xl  border-opacity-0 p-2"
           style={{
             border: "1px solid rgba(255,235,235,0.4)",
           }}
         >
           <div
-            className="w-full h-full rounded-xl p-4 flex flex-wrap overflow-hidden gap-4 justify-center"
+            className="w-full h-full md:h-fit  rounded-xl p-4 flex flex-wrap overflow-hidden gap-4 justify-center items-center"
             style={{
               border: "1px solid rgba(255,235,235,0.4)",
             }}
           >
+            <div className="flex w-full relative big-search-card search-card border border-purple-800 p-1 md:min-h-fit md:h-12 md:max-h-fit shrink-0 text-textClr rounded-md  gap-1 justify-between items=center text-sm md:mb-8 transition-all duration-300">
+              <a
+                href="https://www.google.com/search?q=how+to+start+my+web+development+journey&rlz=1C1GCEA_enEG1017EG1017&oq=how+to+start+my+web+development+journey&aqs=chrome..69i57.4794j0j4&sourceid=chrome&ie=UTF-8"
+                className="absolute h-full w-full"
+                target="_blank"
+              ></a>
+              <div
+                className="h-full w-fit  pr-1 flex items-center justify-center"
+                style={{
+                  borderRight: "1px solid rgba(255,235,235,0.4)",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  color="white"
+                  viewBox="0 0 50 50"
+                  width="20"
+                  height="20"
+                >
+                  <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z" />
+                </svg>
+              </div>
+              <span className="h-full text-start text-lg font-semibold w-full md:mx-1 flex items-center ">
+                How to start my web development journey
+              </span>
+              <div className="w-fit pr-1 h-full flex justify-center items-center">
+                <svg
+                  width="24"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="white"
+                  fill="white"
+                  strokeWidth="20"
+                >
+                  <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                </svg>
+              </div>
+            </div>
+
             <Search
               search={
                 "https://www.google.com/search?q=what+is+html&rlz=1C1GCEA_enEG1017EG1017&oq=what+is+html&aqs=chrome..69i57.1925j0j7&sourceid=chrome&ie=UTF-8"
@@ -76,6 +115,7 @@ const Hero = ({ homesection }) => {
               }
               quote={"JS Error #1"}
             />
+
             <Search
               search={
                 "https://www.google.com/search?q=how+to+select+element+js&rlz=1C1GCEA_enEG1017EG1017&oq=how+to+select+element+js&aqs=chrome..69i57.3261j0j7&sourceid=chrome&ie=UTF-8"
@@ -94,6 +134,7 @@ const Hero = ({ homesection }) => {
               }
               quote={"Intermediate JS Projects"}
             />
+
             <Search
               search={
                 "https://www.google.com/search?q=Learn+React&rlz=1C1GCEA_enEG1017EG1017&oq=Learn+React&aqs=chrome..69i57j69i65j69i61.277j0j7&sourceid=chrome&ie=UTF-8"
