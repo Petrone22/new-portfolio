@@ -25,8 +25,8 @@ const About = ({ aboutsection }) => {
         About Me:
       </h1>
       <p className="text-center font-semibold text-lg mb-4 md:tracking-wider">
-        <span className="text-accent"> Mustafa Rashid</span> is A freelancing
-        Front end developer & ReactJS developer. <br />
+        <span className="text-accent"> </span> is A freelancing Front end
+        developer & ReactJS developer. <br />
         Mustafa is Dedicated to the process of learning and improving, as well
         as delivering awesome-looking, user friendly reuslts in the least amount
         of time possible. He has very keen attention to detail and a

@@ -65,7 +65,7 @@ const Nav = ({ home, about, technology, work }) => {
             transform: "scale(1.5)",
           }}
         />
-        <span className="font-semibold text-lg w-fit">Mustafa</span>
+        <span className="font-semibold text-lg w-fit">adam</span>
       </div>
       {location.pathname === "/" ? (
         <div className="hidden md:flex gap-2 border border-offwhite  rounded-3xl  px-4 h-full ">
