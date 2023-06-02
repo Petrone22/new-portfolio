@@ -20,7 +20,7 @@ const Hero = ({ homesection }) => {
           <span>New: projects got added.</span>
         </div>
         <h1 className="animated font-bold text-4xl md:text-7xl text-center ">
-          Adam Crown.
+          Mustafa Rashid
         </h1>
         <h3 className="animated font-bold text-xl md:text-2xl text-center">
           Unleash your business{" "}
