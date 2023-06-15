@@ -16,15 +16,10 @@ const About = ({ aboutsection }) => {
       className=" h-screen w-full sm:mt-0 lg:max-w-7xl flex flex-col  items-center gap-12 text-textClr -mt-20 relative md:mt-96 mb-40 md:mb-0"
       ref={aboutsection}
     >
-      <img
-        src={bg}
-        alt="backgroud"
-        className="block md:hidden bg-img absolute -z-10 md:w-fit bottom-1/2  "
-      />
       <h1 className="animated font-bold text-4xl md:text-4xl text-center mt-9 ">
         About Me:
       </h1>
-      <p className="text-center font-semibold text-lg mb-4 md:tracking-wider">
+      <p className="text-center font-semibold text-md md:text-lg mb-4 md:tracking-wider">
         <span className="text-accent">Mustafa Rashid</span> is A freelancing
         Front end developer & ReactJS developer. <br />
         Mustafa is Dedicated to the process of learning and improving, as well

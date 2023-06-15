@@ -25,7 +25,7 @@ html {
   min-height: 40px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #cfcece;
 }
 .search-card:hover {
   box-shadow: rgba(88, 28, 135, 0.25) 0px 54px 55px,

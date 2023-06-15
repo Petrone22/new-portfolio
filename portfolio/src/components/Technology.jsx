@@ -50,7 +50,7 @@ const Technology = ({ techsection }) => {
         playsInline
         muted
         loop
-        className="bg-video opacity-90 absolute -z-10 "
+        className="bg-video  absolute -z-10 "
       ></video>
     </motion.div>
   );

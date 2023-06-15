@@ -9,9 +9,6 @@ const Hero = ({ homesection }) => {
   return (
     <motion.div
       className=" mt-16 h-screen w-full   lg:max-w-7xl relative flex flex-col items-center gap-4 text-textClr md:mb-20"
-      initial={{ opacity: 0.5 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
       ref={homesection}
     >
       <div className="flex flex-col gap-3 items-center z-10">
@@ -31,7 +28,7 @@ const Hero = ({ homesection }) => {
         <img
           src={bg}
           alt="backgroud"
-          className=" hidden md:block bg-img absolute -z-10 md:w-fit top-full  "
+          className="w-fit bg-img absolute opacity-60 -z-10 object-contain top-full mt-10  "
         />
         <video
           src={video1}
@@ -64,7 +61,7 @@ const Hero = ({ homesection }) => {
                 target="_blank"
               ></a>
               <div
-                className="h-full w-fit  pr-1 flex items-center justify-center"
+                className="h-14 md:h-full pr-1 flex items-center justify-center"
                 style={{
                   borderRight: "1px solid rgba(255,235,235,0.4)",
                 }}
