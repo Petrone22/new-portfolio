@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import video from "../assets/video2.webm";
 import BallComponent from "./BallComponent";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import js from "../assets/js.png";
+import html5 from "../assets/html5.png";
+import css3 from "../assets/css3.png";
+import javascript from "../assets/javascript.png";
 import tailwind from "../assets/tailwind.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
@@ -32,9 +32,9 @@ const Technology = ({ techsection }) => {
       </h1>
 
       <div className="w-full px-2 md:px-0 md:w-7/12 h-1/2 flex items-center justify-center gap-10 flex-wrap">
-        <BallComponent icon={html} name={"HTML5"} />
-        <BallComponent icon={css} name={"CSS3"} />
-        <BallComponent icon={js} name={"JavaScript"} />
+        <BallComponent icon={html5} name={"HTML5"} />
+        <BallComponent icon={css3} name={"CSS3"} />
+        <BallComponent icon={javascript} name={"JavaScript"} />
         <BallComponent icon={react} name={"React JS"} />
         <BallComponent icon={tailwind} name={"Tailwind"} />
         <BallComponent icon={redux} name={"Redux"} />

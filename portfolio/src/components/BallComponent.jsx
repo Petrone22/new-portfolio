@@ -14,7 +14,7 @@ const BallComponent = ({ icon, name }) => {
       }}
     >
       <div
-        className="bg-blue-700 rounded-lg absolute -top-10  w-full h-8 flex items-center justify-center transition-all duration-300 font-semibold"
+        className="bg-blue-700 rounded-lg absolute -top-10  w-fit px-2 whitespace-nowrap h-8 flex items-center justify-center transition-all duration-300 font-semibold"
         style={{
           opacity: hovered ? "1" : "0",
         }}

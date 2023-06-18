@@ -28,7 +28,7 @@ const Hero = ({ homesection }) => {
         <img
           src={bg}
           alt="backgroud"
-          className="w-fit bg-img absolute opacity-60 -z-10 object-contain top-full mt-10  "
+          className="hidden md:block w-fit bg-img absolute opacity-60 -z-10 object-contain top-full mt-10  "
         />
         <video
           src={video1}
