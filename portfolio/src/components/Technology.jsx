@@ -10,9 +10,9 @@ import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import three from "../assets/three.png";
 import github from "../assets/github.png";
-import git from "../assets/git.png";
-import python from "../assets/python.png";
-import figma from "../assets/figma.png";
+import gitlang from "../assets/gitlang.png";
+import pythonlang from "../assets/pythonlang.png";
+import fig from "../assets/fig.png";
 
 const Technology = ({ techsection }) => {
   return (
@@ -40,9 +40,9 @@ const Technology = ({ techsection }) => {
         <BallComponent icon={redux} name={"Redux"} />
         <BallComponent icon={three} name={"Three.JS"} />
         <BallComponent icon={github} name={"GitHub"} />
-        <BallComponent icon={git} name={"Git"} />
-        <BallComponent icon={python} name={"Python"} />
-        <BallComponent icon={figma} name={"Figma"} />
+        <BallComponent icon={gitlang} name={"Git"} />
+        <BallComponent icon={pythonlang} name={"Python"} />
+        <BallComponent icon={fig} name={"Figma"} />
       </div>
       <video
         src={video}
