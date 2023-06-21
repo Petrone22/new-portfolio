@@ -2,7 +2,7 @@ import React from "react";
 const Card = ({ title, img, description, gh, pages }) => {
   return (
     <div
-      className="w-11/12 md:w-5/12  h-auto rounded-xl p-1 mb-8 text-textClr border border-purple-950 cursor-pointer hover:border-purple-700 transition-all duration-300"
+      className="scale-95 hover:scale-100 w-11/12 md:w-5/12  h-auto rounded-xl p-1 mb-8 text-textClr border border-purple-950 cursor-pointer hover:border-purple-700 transition-all duration-300"
       //   style={{
       //     border: "1px solid rgba(255,235,235,0.4)",
       //   }}
